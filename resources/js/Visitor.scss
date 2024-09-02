@@ -140,10 +140,28 @@ p {
 }
 
 #presentation {
-    background: url('./assets/light.jpg');
+    background: url('./assets/techBG.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+#formation, #presentation{
+    box-shadow: 0 0 2rem #000 inset;
+}
+
+.glass2 {
+    background: #121212;
+    backdrop-filter: blur(10px);
+}
+
+.glass3 {
+    color: white;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    background-image: linear-gradient(120deg,
+            rgba(255, 255, 255, .3),
+            rgba(0, 0, 0, 0.2));
 }
 
 @keyframes slideInLeft {
@@ -279,7 +297,7 @@ p {
     }
 
     to {
-        transform: translateY(30%);
+        transform: translateY(-20%);
     }
 }
 

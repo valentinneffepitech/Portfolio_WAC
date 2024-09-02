@@ -10,6 +10,7 @@ import { Contact } from '@/Components/customs/sections/Contact';
 import { Footer } from '@/Components/customs/sections/Footer';
 import { Formations } from '@/Components/customs/sections/Formations';
 import { Presentation } from '@/Components/customs/sections/Presentation';
+import { Techno } from '@/Components/customs/sections/Techno';
 
 export default function Welcome({ technologies, categories }) {
 
@@ -47,10 +48,11 @@ export default function Welcome({ technologies, categories }) {
             <Accueil />
             <Presentation />
             <Formations />
-            <div id="projets" className='min-h-screen bg-white'>
+            <section id="projets" className='min-h-screen bg-white'>
+                <Techno />
                 <TechnoFilter categories={categories} manageFilter={manageFilter} />
                 <TechnoDisplayer technologies={technologies} filter={filter} />
-            </div>
+            </section>
             <Contact />
             <Footer />
         </GuestLayout>

@@ -21,7 +21,7 @@ export const Formations = () => {
             </div>
             <hr className='w-3/4 mx-auto my-3 md:hidden mt-6' />
             <div className='flex flex-col md:justify-between md:flex-row-reverse'>
-                <img src={LogoGrad} className='w-1/2 md:w-1/3 lg:w-1/3 ml-[12.5%] md:mx-auto mt-3 my-3' />
+                <img src={LogoGrad} className='w-1/2 md:w-1/3 lg:w-1/3 mx-auto my-3' />
                 <p className='w-3/4 md:w-1/2 md:p-[1rem] mx-auto md:mx-0 text-white border border-transparent pt-4'>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce massa sem, pharetra eget lorem quis, ullamcorper egestas turpis. Mauris sit amet lectus bibendum metus dictum rhoncus. Nulla eget purus non lectus venenatis posuere. Nam mattis, urna sit amet congue aliquam, nisi justo pellentesque est, vitae venenatis orci elit ut dolor. Integer nec mattis lectus. Nullam metus erat, viverra sit amet placerat eu, elementum quis quam. Phasellus aliquet auctor tempus. Donec id massa nunc. Praesent at urna velit. Aenean euismod blandit sollicitudin. Sed volutpat purus quis laoreet lobortis.
                 </p>

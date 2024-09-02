@@ -18,7 +18,6 @@ export const TechnoProjectsList = ({
                         {
                             techno.projects.length !== 0 ?
                                 <ul className='mt-4 lg:mt-0'>
-                                    <h3 className='text-center my-4 lg: mt-0 text-xl font-bold w-full border-t-2 border-b-2 lg:border-b-transparent py-3'>Mes projets avec {techno.name}</h3>
                                     <p className='text-center italic'>Cliquez sur un projet pour afficher plus de détails</p>
                                     <div className='flex flex-wrap justify-center lg:justify-around py-6'>
                                         {
