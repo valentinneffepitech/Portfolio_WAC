@@ -1,0 +1,203 @@
+$types: (
+    update:rgb(0, 149, 194),
+    add:rgb(0, 160, 0),
+    delete:rgb(190, 0, 0),
+);
+
+$grey: #e2e2e2;
+
+/* Register */
+
+#register_form {
+    width: 45%;
+    margin: 0 2rem;
+}
+
+@media screen and (max-width:992px) {
+    #register_form {
+        width: 75%;
+        margin: 0;
+    }
+}
+
+.customForm {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 2rem;
+}
+
+@media screen and (max-width:992px) {
+    .customForm {
+        width: 70%;
+    }
+}
+
+/* Espace admin */
+
+section {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem 0;
+}
+
+section #projects_list {
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-height: 75vh;
+}
+
+section .project_card {
+    background-color: white;
+}
+
+section .project_card .project_card_head {
+    max-height: 200px;
+    overflow: hidden;
+}
+
+section .project_card .project_card_body {
+    padding: 1rem;
+    border-top: 1px solid $grey;
+}
+
+section .project_card .project_card_body h2 {
+    font-size: 1.3rem;
+}
+
+section .project_card .project_card_body p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+section .project_card_body_links {
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border: 2px solid transparent;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all .2s ease-in;
+    margin: 1rem 0;
+}
+
+label {
+    margin-bottom: 1rem;
+}
+
+svg {
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+svg:hover {
+    color: green;
+}
+
+input[type=file] {
+    height: .1px;
+    width: .1px;
+    opacity: 0;
+}
+
+/* Projets */
+
+
+@media screen and (min-width:992px) {
+    #update_actual {
+        display: flex;
+    }
+}
+
+#preview {
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    background-color: $grey;
+    color: #1d1d1d;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    color: #474747;
+    border-radius: 1rem;
+    overflow: hidden;
+    font-size: .8em;
+}
+
+/* Users */
+
+table.custom_table {
+    width: 90%;
+}
+
+.custom_table thead {
+    text-align: left;
+    background-color: #1d1d1d;
+    color: #f6f6f6;
+    border-bottom: 2px solid #fff;
+}
+
+.custom_table thead th,
+.custom_table tbody td {
+    padding: .5rem;
+}
+
+.custom_table tbody td {
+    background-color: $grey;
+    border-bottom: 2px solid #fff;
+}
+
+.custom_table thead th:not(:last-of-type),
+.custom_table tbody td:not(:last-of-type) {
+    border-right: 2px solid #fff;
+}
+
+/* Technologies */
+
+.techno_container {
+    height: 75vh;
+}
+
+.techno_container img {
+    aspect-ratio: 1/1;
+}
+
+/* Formules Sass */
+
+@each $type, $color in $types {
+    .btn-#{$type} {
+        background-color: $color;
+        color: white;
+        border-color: $color;
+    }
+
+    .btn-#{$type}:hover {
+        background-color: transparent;
+        border-color: darken($color, 10%);
+        color: $color;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    section {
+        flex-direction: column;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    section #projects_list {
+        max-height: none;
+        overflow-y: auto;
+    }
+
+    section #projects_list,
+    form {
+        width: 90%;
+    }
+}
