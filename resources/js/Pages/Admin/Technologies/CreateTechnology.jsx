@@ -14,7 +14,7 @@ export const CreateTechnology = ({ categories }) => {
     const { data, setData, post, errors } = useForm({
         name: '',
         image: false,
-        category: null
+        category: categories.length != 0 ? categories[0].id : null
     })
 
     const [preview, setPreview] = useState(false);

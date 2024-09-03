@@ -10,7 +10,7 @@ $grey: #e2e2e2;
 
 #register_form {
     width: 45%;
-    margin: 0 2rem;
+    margin: 0 auto;
 }
 
 @media screen and (max-width:992px) {
@@ -25,6 +25,7 @@ $grey: #e2e2e2;
     flex-direction: column;
     width: 40%;
     gap: 2rem;
+    padding-left: 5%;
 }
 
 @media screen and (max-width:992px) {

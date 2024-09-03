@@ -13,7 +13,7 @@ export default function Categories({ auth, categories, ...props }) {
             <Head title="Catégories" />
             <section>
                 <CreateCategory />
-                <div className="w-3/4 mx-auto lg:w-1/4">
+                <div className="w-3/4 mx-auto p-4 lg:w-1/4">
                     <h2 className="text-lg">Toutes les catégories</h2>
                     {
                         categories.length == 0 ?

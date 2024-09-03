@@ -8,7 +8,7 @@ export const ScrollDown = () => {
             <p className='text-center mb-2 text-[.9rem] appear-down-4'>
                 Scroll Down
             </p>
-            <img src={Chevrons} className='w-[50%] mx-auto slide-down'/>
+            <img src={Chevrons} className='w-[50%] mx-auto slide-down' alt='double chevrons'/>
         </div>
     )
 }

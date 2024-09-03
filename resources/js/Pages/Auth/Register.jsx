@@ -45,7 +45,7 @@ export default function Register({ user, admins, message }) {
             className="w-full">
             <Head title="Tous les utilisateurs" />
             <section className='lg:w-4/5 mx-auto'>
-                <form id="register_form" onSubmit={submit}>
+                <form id="register_form" className='pl-[5%]' onSubmit={submit}>
                     <h3 className="my-5">Ajouter un utilisateur</h3>
                     <div>
                         <InputLabel htmlFor="name" value="Nom d'utilisateur" />
