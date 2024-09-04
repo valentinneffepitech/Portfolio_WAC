@@ -5,6 +5,7 @@ import { Toast } from '../Toasts';
 import { Github } from '../svg/Github';
 import { Linkedin } from '../svg/Linkedin';
 import { HandShake } from '../svg/HandShake';
+import { Mail, Smartphone } from 'lucide-react';
 
 export const Contact = () => {
 
@@ -85,10 +86,23 @@ export const Contact = () => {
                 </form>
                 <HandShake className='lg:w-full hidden lg:block' size={250} fill='#fff' />
             </div>
-            <h3 className='mt-10 underline underline-offset-4 text-lg'>Retrouvez-moi également sur les réseaux&nbsp;:</h3>
-            <div className='mt-10 flex w-full justify-center gap-[10%] lg:gap-[5%]'>
-                <Github className='rounded w-16 h-fit' />
-                <Linkedin stroke='white' fill='white' className='bg-[#0A66C2] p-1 rounded w-16 h-fit' />
+            <div className='text-white my-[1.5rem] lg:mt-[3rem] lg:mb-0 flex flex-wrap gap-[1rem] w-full justify-around lg:justify-center p-6 lg:items-center lg:gap-0'>
+                <div className='flex items-center w-2/5 lg:w-1/4 justify-center'>
+                    <a href="tel:+33624950494" className='flex w-full lg:w-fit lg:px-10 justify-center py-4 transition-all duration-300 border-white hover:border-blue-900 border rounded hover:bg-blue-900 items-center gap-6'>
+                        <Smartphone size={30} />
+                        <p className='hidden md:block'>06 24 95 04 94</p>
+                    </a>
+                </div>
+                <div className='flex items-center w-2/5 lg:w-1/4 justify-center'>
+                    <a href='mailto:neffvalentinpro@gmail.com' className='flex w-full lg:w-fit lg:px-10 justify-center py-4 transition-all duration-300 border-white hover:border-blue-900 border rounded hover:bg-blue-900 items-center gap-6'>
+                        <Mail size={30} />
+                        <p className='hidden md:block'>neffvalentinpro@gmail.com</p>
+                    </a>
+                </div>
+                <div className='mt-10 lg:mt-0 flex w-full lg:w-1/4 justify-center gap-[10%] lg:gap-[5%]'>
+                    <Github className='rounded w-16 h-fit' />
+                    <Linkedin stroke='white' fill='white' className='bg-[#0A66C2] p-1 rounded w-16 h-fit' />
+                </div>
             </div>
             {
                 status &&
