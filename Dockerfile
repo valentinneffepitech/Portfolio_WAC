@@ -46,6 +46,8 @@ RUN chmod -R 775 /var/www/html/storage /var/www/html/bootstrap/cache
 
 RUN chmod 777 -R ./storage
 
+RUN npm run build
+
 # Expose port 80
 EXPOSE 80
 
