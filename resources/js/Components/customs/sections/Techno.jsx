@@ -6,9 +6,6 @@ export const Techno = () => {
             <h3 className='text-center mb-3 uppercase font-bold text-lg p-6'>
                 Quelques réalisations
             </h3>
-            <p>
-                
-            </p>
         </article>
     )
 }

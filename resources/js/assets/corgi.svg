@@ -1,27 +1,55 @@
 <svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
     <style>
-        #bubbles circle{
+        #bubbles circle {
             animation: up 2s ease-out infinite;
         }
 
-        #bubbles circle:nth-of-type(4n+1){
+        #bubbles circle:nth-of-type(4n+1) {
             animation-delay: .5s;
         }
 
 
-        #bubbles circle:nth-of-type(4n+2){
+        #bubbles circle:nth-of-type(4n+2) {
             animation-delay: .8s;
         }
 
-        #bubbles circle:nth-of-type(4n+3){
+        #bubbles circle:nth-of-type(4n+3) {
             animation-delay: 1.2s;
         }
 
-        @keyframes up{
-            from{
+        .eye {
+            animation: triggerEyes 2s infinite;
+        }
+
+        @keyframes triggerEyes {
+            0% {
+                transform: translateY(0);
+            }
+
+            25% {
+                transform: translateX(-1%);
+            }
+
+            50% {
+                transform: translateY(-2%);
+            }
+
+            75% {
+                transform: translateX(1%);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes up {
+            from {
                 opacity: 0;
                 transform: translateY(0);
-            } to {
+            }
+
+            to {
                 opacity: 1;
                 transform: translateY(-20px);
             }
@@ -30,9 +58,9 @@
     <g id="corgi">
         <path d="M60 85 c 0 0, 5 -40 ,20 -40 c 0 0, 60 -20, 60 40" fill="#cc5404" stroke="#1d1d1d" />
         <path d="M60 85 c 0 0, 10 -20, 20 0 Z" fill="#e2e2e2" stroke="#1d1d1d" />
-        <path d="M60 84 c 0 0, 10 -10, 20 0 Z" fill="white" stroke="" />
         <path d="M120 85 c 0 0, 10 -20, 20 0 Z" fill="#e2e2e2" stroke="#1d1d1d" />
-        <path d="M120 84 c 0 0, 10 -10, 20 0 Z" fill="white" stroke="" />
+        <path d="M61 84 c 0 0, 10 -10, 20 0 Z" fill="white" stroke="" />
+        <path d="M119 85 c 0 0, 10 -10, 20 0 Z" fill="white" stroke="" />
     </g>
     <g id="corgi_head">
         <path d="M80 40 c 0 0, 0 -10, -10 0 c 0 0, -5 5 , -10 0 c 0 0, 0 -5, 10 -20 c 0 0, 5 -10, 20 0" />
@@ -41,13 +69,17 @@
         <path d="M80 40 c 0 0, 0 -30 , 22.5 -30 c 0 0, 20 0 , 24 30" fill="#804400" stroke="#1d1d1d" />
         <path d="M80 40 c 0 0, 10 -40, 20 0 Z" fill="white" stroke="#1d1d1d" />
         <path d="M105 40 c 0 0, 10 -40, 20 0 Z" fill="white" stroke="#1d1d1d" />
-        <ellipse rx="5" ry="8" cx="115" cy="38" fill="skyblue" />
-        <ellipse rx="5" ry="8" cx="90" cy="38" fill="skyblue" />
-        <ellipse rx="2" ry="5" cx="90" cy="38" fill="black" />
-        <ellipse rx="2" ry="5" cx="115" cy="38" fill="black" />
+        <g class="eye">
+            <ellipse rx="5" ry="8" cx="115" cy="38" fill="skyblue" />
+            <ellipse rx="2" ry="5" cx="115" cy="38" fill="black" />
+            <circle cx="116" cy="36" r="1" fill="white" />
+        </g>
+        <g class="eye">
+            <ellipse rx="5" ry="8" cx="90" cy="38" fill="skyblue" />
+            <ellipse rx="2" ry="5" cx="90" cy="38" fill="black" />
+            <circle cx="91" cy="36" r="1" fill="white" />
+        </g>
         <path d="M80 40 c 0 0 , -20 30, 0 30 h 40 c 0 0, 20 -30, 0 -30 Z" fill="#c0703a" stroke="#1d1d1d" />
-        <circle cx="91" cy="36" r="1" fill="white" />
-        <circle cx="116" cy="36" r="1" fill="white" />
         <ellipse cx="102" cy="43" rx="10" ry="5" fill="black" />
     </g>
     <g id="bottle">

@@ -1,0 +1,43 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="background:#1d1d1d">
+
+    <style>
+        #shield {
+            animation: throw 1s linear;
+            transform: translateX(10%) translateY(10%);
+            scale: 150%;
+        }
+
+        @keyframes throw {
+            0% {
+                scale: 1;
+                transform: translateX(0%) translateY(10%);
+            }
+
+            25% {
+                transform: translateX(33%) translateY(50%);
+            }
+
+            50% {
+                transform: translateX(50%) translateY(33%);
+            }
+
+            75%{
+                scale: 1;
+                transform: translateX(10%) translateY(0%);
+            }
+
+            100% {
+                scale: 1.5;
+                transform: translateX(10%) translateY(10%);
+            }
+        }
+    </style>
+
+    <g id="shield">
+        <circle cx="50" cy="50" r="50" stroke="none" fill="#b10b2c" />
+        <circle cx="50" cy="50" r="40" stroke="none" fill="#f6f6f6" />
+        <circle cx="50" cy="50" r="30" stroke="none" fill="#b10b2c" />
+        <circle cx="50" cy="50" r="20" stroke="none" fill="#0051ff" />
+        <path d="M50 30 L 63 65 L 30 43 L 70,43 L 37 65 L 50 30" fill="#a5a5a5" />
+    </g>
+</svg>
