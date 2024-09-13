@@ -34,8 +34,6 @@ WORKDIR /var/www/html
 # Install composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
-# Install project dependencies using Composer
-RUN composer install
 
 # Install Node.js dependencies
 RUN npm install
@@ -46,10 +44,26 @@ RUN chmod -R 775 /var/www/html/storage /var/www/html/bootstrap/cache
 
 RUN chmod 777 -R ./storage
 
+# Copy SSL certificates into the container
+# COPY ./certs/fullchain.pem /etc/ssl/certs/fullchain.pem
+# COPY ./certs/privkey.pem /etc/ssl/private/privkey.pem
+# COPY ./certs/ssl-cert-snakeoil.pem /etc/ssl/certs/ssl-cert-snakeoil.pem
+# COPY ./certs/ssl-cert-snakeoil.pem /etc/ssl/private/ssl-cert-snakeoil.pem
+
+# Enable SSL module and default SSL site
+# RUN a2enmod ssl && a2ensite default-ssl
+
+# Install project dependencies using Composer
+RUN composer install
+
+RUN npm i vite --save-dev
 RUN npm run build
 
-# Expose port 80
+# Expose port 80 (http)
 EXPOSE 80
+
+# Expose port 443 (https)
+EXPOSE 443
 
 # Start Apache and Node.js
 CMD ["apache2-foreground"]

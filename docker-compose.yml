@@ -7,6 +7,10 @@ services:
       - /var/log/apache2/app:/var/log/apache2/
     ports:
       - 8080:80
+      # - 80:80
+      # - 443:443 
+    depends_on:
+      - db
   db:
     container_name: db
     image: mysql:5.7
@@ -18,7 +22,7 @@ services:
     ports:
       - "3308:3306"
     volumes:
-      - dbdata:/var/lib/mysql
+      - ./dbdata:/var/lib/mysql
 
 volumes:
   dbdata:
