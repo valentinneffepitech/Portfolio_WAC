@@ -28,11 +28,11 @@ export const Menu = ({
     ]
     return (
         <nav className={`bg-black fixed top-0 min-h-screen flex flex-col lg:flex-row items-center justify-center gap-10 fadeIn-1 z-10 w-full`}>
-            <img src={logo} alt='Valentin Neff' className='w-1/4 md:w-1/5 lg:w-[10%]'/>
+            <img src={logo} alt='Valentin Neff' className='w-1/4 md:w-1/5 lg:w-[10%]' />
             <ul className='flex flex-col gap-4'>
                 {
                     fields.map(field => (
-                        <li className='menu__link overflow-hidden'>
+                        <li key={field.id} className='menu__link overflow-hidden'>
                             <a href={`#${field.id}`} className='text-white' onClick={() => close()}>
                                 {field.title}
                             </a>

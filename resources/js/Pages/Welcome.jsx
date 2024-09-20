@@ -2,7 +2,7 @@ import { Head } from '@inertiajs/react';
 import GuestLayout from '@/Layouts/GuestLayout'
 import { useState } from 'react';
 import { TechnoDisplayer } from '@/Components/customs/TechnoDisplayer';
-import { TechnoFilter } from '@/Components/customs/TechnoFilter';
+import { Github } from '@/Components/customs/svg/Github';
 import { Accueil } from '@/Components/customs/sections/Accueil';
 import { Menu } from '@/Components/customs/sections/Menu';
 import { MenuIcon, X } from 'lucide-react';
@@ -11,26 +11,15 @@ import { Footer } from '@/Components/customs/sections/Footer';
 import { Formations } from '@/Components/customs/sections/Formations';
 import { Presentation } from '@/Components/customs/sections/Presentation';
 import { Techno } from '@/Components/customs/sections/Techno';
+import { Temoignages } from '@/Components/customs/sections/Temoignages';
 
-export default function Welcome({ technologies, categories }) {
-
-    const [filter, setFilter] = useState([]);
+export default function Welcome({ feedbacks, projects }) {
 
     const [openMenu, setOpenMenu] = useState(false);
 
     const closeMenu = () => setOpenMenu(false);
 
     const iconSize = 30
-
-    const manageFilter = (value) => {
-        console.log(value)
-        value = parseInt(value);
-        if (filter.includes(value)) {
-            setFilter(prev => prev.filter(element => element != value));
-        } else {
-            setFilter(prev => [...prev, value]);
-        }
-    }
 
     return (
         <GuestLayout>
@@ -48,11 +37,14 @@ export default function Welcome({ technologies, categories }) {
             <Accueil />
             <Presentation />
             <Formations />
-            <section id="projets" className='min-h-screen bg-white'>
+            <section id="projets" className='min-h-screen bg-white block'>
                 <Techno />
-                <TechnoFilter categories={categories} manageFilter={manageFilter} />
-                <TechnoDisplayer technologies={technologies} filter={filter} />
+                <TechnoDisplayer projects={projects} />
+                <a href='https://github.com/valentinneffepitech/Portfolio' className='flex items-center mx-auto border-2 rounded w-fit border-[#1d1d1d] transition-all duration-200 hover:text-white hover:bg-[#1d1d1d] text-center py-4 px-6 mb-[2rem]' target='_blank'>
+                    Retrouvez tous mes projets sur Github <Github stroke={'#1d1d1d'} className='w-8 h-fit ml-3' id="github_link" />
+                </a>
             </section>
+            <Temoignages feedbacks={feedbacks} />
             <Contact />
             <Footer />
         </GuestLayout>

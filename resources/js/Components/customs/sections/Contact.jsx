@@ -63,7 +63,7 @@ export const Contact = () => {
     }
 
     return (
-        <section id="contact" className='min-h-screen text-white bg-[#252525] flex flex-col md:justify-center items-center'>
+        <section id="contact" className='min-h-screen text-white bg-[#252525] flex flex-col justify-evenly md:justify-center items-center'>
             <h2 className='text-[1.5rem] mt-10'>
                 Intéressé par une collaboration&nbsp;?
             </h2>
@@ -98,10 +98,6 @@ export const Contact = () => {
                         <Mail size={30} />
                         <p className='hidden md:block'>neffvalentinpro@gmail.com</p>
                     </a>
-                </div>
-                <div className='mt-10 lg:mt-0 flex w-full lg:w-1/4 justify-center gap-[10%] lg:gap-[5%]'>
-                    <Github className='rounded w-16 h-fit' />
-                    <Linkedin stroke='white' fill='white' className='bg-[#0A66C2] p-1 rounded w-16 h-fit' />
                 </div>
             </div>
             {

@@ -37,8 +37,6 @@ class CategorieController extends Controller
         $categorie = Category::find($id);
         $categorie->name = $request->name;
 
-        var_dump($categorie);
-
         try {
             $categorie->save();
         } catch (Exception $exception) {

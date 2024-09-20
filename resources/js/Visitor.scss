@@ -119,6 +119,7 @@ p {
     animation-name: slideIn;
     animation-timing-function: linear;
     animation-duration: 300ms;
+    animation-delay: 100ms;
 }
 
 @for $i from 0 to 2 {
@@ -135,10 +136,6 @@ p {
     overflow: hidden;
 }
 
-#accueil__ambiance img {
-    animation: appearLeft 3s;
-}
-
 #presentation {
     background: url('./assets/techBG.jpg');
     background-repeat: no-repeat;
@@ -146,7 +143,8 @@ p {
     background-position: center;
 }
 
-#formation, #presentation{
+#formation,
+#presentation {
     box-shadow: 0 0 2rem #000 inset;
 }
 
@@ -392,6 +390,12 @@ h2 span {
     animation-name: titleSlideRight;
 }
 
+.task-list li::before {
+    content: "\2192";
+    margin-right: .5rem;
+    font-size: 1.5rem;
+}
+
 @keyframes titleSlideLeft {
     from {
         opacity: 0;
@@ -413,5 +417,12 @@ h2 span {
     to {
         opacity: 1;
         transform: translateX(0);
+    }
+}
+
+@media screen and (min-width:768px) {
+    #formation>div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }

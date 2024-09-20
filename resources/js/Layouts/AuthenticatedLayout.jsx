@@ -25,6 +25,11 @@ export default function Authenticated({ user, header, children }) {
             id: 3,
             name: 'Technologies',
             route: 'technologies'
+        },
+        {
+            id: 4,
+            name: 'Feedbacks',
+            route: 'feedbacks'
         }
     ]
 

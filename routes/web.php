@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CategorieController;
+use App\Http\Controllers\FeedbackController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProjectController;
@@ -65,6 +66,16 @@ Route::middleware('auth')->group(function () {
         'edit'
     ])->name('techno.edit');
 
+    Route::get('/feedbacks', [
+        FeedbackController::class,
+        'index'
+    ])->name('feedbacks');
+
+    Route::get('/feedback/edit/{id}', [
+        FeedbackController::class,
+        'edit'
+    ])->name('feedback.edit');
+
     //* POST Routes
     Route::post('/project/create', [
         ProjectController::class,
@@ -80,6 +91,11 @@ Route::middleware('auth')->group(function () {
         TechnologieController::class,
         'create'
     ])->name('techno.new');
+
+    Route::post('/feedback/new', [
+        FeedbackController::class,
+        'create'
+    ])->name('feedback.new');
 
     //* Methode POST (Bug passage Image méthode PUT)
     Route::post('/project/update/{id}', [
@@ -103,6 +119,11 @@ Route::middleware('auth')->group(function () {
         'updateTechno'
     ])->name('project.technos');
 
+    Route::put('/feedback/update', [
+        FeedbackController::class,
+        'update'
+    ])->name('feedback.update');
+
     //* DELETE Routes
     Route::delete('/project/delete/{id}', [
         ProjectController::class,
@@ -123,6 +144,11 @@ Route::middleware('auth')->group(function () {
         TechnologieController::class,
         'destroy'
     ])->name('technologies.delete');
+
+    Route::delete('/feedback/delete/{id}', [
+        FeedbackController::class,
+        'destroy'
+    ])->name('feedback.delete');
 });
 
 require __DIR__ . '/auth.php';
