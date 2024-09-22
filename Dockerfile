@@ -66,7 +66,7 @@ RUN npm run build
 EXPOSE 80
 
 # Expose port 443 (https)
-EXPOSE 443
+# EXPOSE 443
 
 # Start Apache and Node.js
 CMD ["apache2-foreground"]

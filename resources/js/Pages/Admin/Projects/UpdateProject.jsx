@@ -39,7 +39,7 @@ export default function UpdateProject({ auth, project, technologies }) {
             <Head title={`Modifier ${project.name}`} />
             <section className='container mx-auto items-center p-12'>
                 <UpdateForm project={project} />
-                <div className="lg:w-2/5 mx-auto">
+                <div className="lg:w-4/5 lg:ml-[10%] mx-auto">
                     <div id="update_actual">
                         <div id="update_actual_head" className="border-r-2 border-grey-200 h-100">
                             <img src={"/" + project.image} />
