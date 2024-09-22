@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Techno = () => {
     return (
-        <h3 className='text-center mb-3 uppercase font-bold text-lg p-6'>
+        <h3 className='text-2xl text-center mb-3 uppercase font-bold p-6'>
             Quelques réalisations
         </h3>
     )

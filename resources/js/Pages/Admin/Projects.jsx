@@ -13,7 +13,7 @@ export default function Projects({ auth, projects, ...props }) {
             <Head title="Projets" />
             <section>
                 <CreateProjectForm />
-                <div className='w-3/4 lg:w-1/2'>
+                <div className='w-3/4 lg:w-1/2 h-[75vh] overflow-y-scroll'>
                     <h2 className="text-2xl mb-4 underline">
                         Liste des projets
                     </h2>
