@@ -38,7 +38,7 @@ export const ProjectCarroussel = ({
             <div className='flex overflow-scroll w-4/5 gap-10'>
                 {
                     projects[screen] &&
-                    <div className='bg-white shrink-0 w-full md:w-3/4 md:mx-auto lg:w-full lg:flex pb-10 lg:pb-0 slideIn'>
+                    <div className='bg-white shrink-0 w-full md:w-3/4 md:mx-auto lg:w-full lg:flex pb-10 lg:pb-0'>
                         <img src={projects[screen].image} className='w-full cursor-pointer mb-2 lg:mb-0 aspect-[4/3] border-b-gray-300 border-b-[1px] lg:border-b-0' />
                         <div className={`overflow-hidden transition-all duration-200 mt-3 pb-3 lg:w-full lg:flex lg:flex-col lg:p-6 lg:justify-between p-4 lg:border-l-2 lg:border-l-gray-400 lg:my-6`}>
                             <h4 className='underline text-bold underline-offset-2 text-xl my-2 lg:mt-0'>

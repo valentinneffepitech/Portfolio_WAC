@@ -37,10 +37,10 @@ export default function Welcome({ feedbacks, projects }) {
             <Accueil />
             <Presentation />
             <Formations />
-            <section id="projets" className='min-h-screen bg-white block'>
+            <section id="projets" className='min-h-screen bg-[#252525] block'>
                 <Techno />
                 <TechnoDisplayer projects={projects} />
-                <a href='https://github.com/valentinneffepitech/Portfolio' className='flex items-center mx-auto border-2 rounded w-fit border-[#1d1d1d] transition-all duration-200 hover:text-white hover:bg-[#1d1d1d] text-center py-4 px-6 mb-[2rem]' target='_blank'>
+                <a href='https://github.com/valentinneffepitech/Portfolio' className='flex text-white items-center mx-auto border-2 rounded w-fit border-[#f6f6f6] transition-all duration-200 hover:text-[#1d1d1d] hover:bg-[#f6f6f6] text-center py-4 px-6 mb-[2rem]' target='_blank'>
                     Retrouvez tous mes projets sur Github <Github stroke={'#1d1d1d'} className='w-8 h-fit ml-3' id="github_link" />
                 </a>
             </section>
