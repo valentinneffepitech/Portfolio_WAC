@@ -63,9 +63,8 @@
         <path d="M119 85 c 0 0, 10 -10, 20 0 Z" fill="white" stroke="" />
     </g>
     <g id="corgi_head">
-        <path d="M80 40 c 0 0, 0 -10, -10 0 c 0 0, -5 5 , -10 0 c 0 0, 0 -5, 10 -20 c 0 0, 5 -10, 20 0" />
-        <path
-            d="M125 40 c 0 0,0 10, 0 -10 c 0 0, 10 0, 10 10 c 0 0, 5 10,10 0 c 0 0, 10 -10, 0 -20 c 0 0, -10 -10, -30 0" />
+        <path d="M80 40 c 0 0, 0 -10, -10 0 c 0 0, -5 5 , -10 0 c 0 0, 0 -5, 10 -20 c 0 0, 5 -10, 20 0" stroke="white" stroke-width=".5"/>
+        <path d="M125 40 c 0 0,0 10, 0 -10 c 0 0, 10 0, 10 10 c 0 0, 5 10,10 0 c 0 0, 10 -10, 0 -20 c 0 0, -10 -10, -30 0" stroke="white" stroke-width=".5"/>
         <path d="M80 40 c 0 0, 0 -30 , 22.5 -30 c 0 0, 20 0 , 24 30" fill="#804400" stroke="#1d1d1d" />
         <path d="M80 40 c 0 0, 10 -40, 20 0 Z" fill="white" stroke="#1d1d1d" />
         <path d="M105 40 c 0 0, 10 -40, 20 0 Z" fill="white" stroke="#1d1d1d" />
