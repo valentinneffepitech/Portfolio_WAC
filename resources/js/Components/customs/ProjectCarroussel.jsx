@@ -53,7 +53,7 @@ export const ProjectCarroussel = ({
                                         <li key={techno.id} className='w-1/5 lg:w-[10%]'>
                                             <img src={techno.image} className='w-full aspect-[4/3] lg:aspect-square' />
                                         </li>
-                                    ))
+                                   ))
                                 }
                             </ul>
                         </div>
