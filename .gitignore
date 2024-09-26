@@ -22,3 +22,5 @@ yarn-error.log
 /apache
 docker-compose.yml
 Dockerfile
+/ssl
+/certs
