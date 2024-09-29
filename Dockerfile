@@ -18,17 +18,17 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 RUN a2enmod rewrite 
 
 # Copy the SSL certificates to the container
-#COPY ./ssl/valentinneff.fr/fullchain.pem /etc/ssl/certs/fullchain.pem
-#COPY ./ssl/valentinneff.fr/privkey.pem /etc/ssl/private/privkey.pem
+COPY ./ssl/fullchain.pem /etc/ssl/certs/fullchain.pem
+COPY ./ssl/privkey.pem /etc/ssl/private/privkey.pem
 
 # Configure Apache to use the provided SSL certificates
-#RUN sed -i 's!SSLCertificateFile.*!SSLCertificateFile /etc/ssl/certs/fullchain.pem!g' /etc/apache2/sites-available/default-ssl.conf
-#RUN sed -i 's!SSLCertificateKeyFile.*!SSLCertificateKeyFile /etc/ssl/private/privkey.pem!g' /etc/apache2/sites-available/default-ssl.conf
+RUN sed -i 's!SSLCertificateFile.*!SSLCertificateFile /etc/ssl/certs/fullchain.pem!g' /etc/apache2/sites-available/default-ssl.conf
+RUN sed -i 's!SSLCertificateKeyFile.*!SSLCertificateKeyFile /etc/ssl/private/privkey.pem!g' /etc/apache2/sites-available/default-ssl.conf
 
 # Add ServerName directive (replace 'your_domain.com' with your actual domain)
-# RUN echo "ServerName valentinneff.fr" >> /etc/apache2/sites-available/default-ssl.conf
+RUN echo "ServerName valentinneff.fr" >> /etc/apache2/sites-available/default-ssl.conf
 
-# RUN a2enmod ssl && a2ensite default-ssl
+RUN a2enmod ssl && a2ensite default-ssl
 
 # Install PHP extensions
 RUN docker-php-ext-install pdo_mysql zip
@@ -66,7 +66,7 @@ RUN npm run build
 EXPOSE 80
 
 # Expose port 443 (https)
-# EXPOSE 443
+EXPOSE 443
 
 # Start Apache and Node.js
 CMD ["apache2-foreground"]

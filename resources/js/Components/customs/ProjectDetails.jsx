@@ -6,8 +6,8 @@ export const ProjectDetails = ({
     choose
 }) => {
     return (
-        <div className='flex flex-col flex-wrap justify-between items-center mb-5 mx-2 w-full md:w-1/3 lg:w-[25%] project_detail transition-all duration-200 rounded glass3 pb-4' onClick={() => choose(index)}>
-            <img src={project.image} className='w-full cursor-pointer border-b-2' />
+        <div className='flex flex-col flex-wrap items-center mb-5 mx-2 w-full md:w-1/3 lg:w-[25%] project_detail transition-all duration-200 rounded glass3 pb-4' onClick={() => choose(index)}>
+            <img src={project.image} className='w-full cursor-pointer border-b-2 lg:aspect-video' />
             <h4 className='w-full pt-2 px-6 font-semibold text-lg '>
                 {project.name}
             </h4>
