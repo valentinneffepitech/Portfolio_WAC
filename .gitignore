@@ -23,3 +23,5 @@ docker-compose.yml
 Dockerfile
 .vite
 dbdata
+/ssl
+/certs
