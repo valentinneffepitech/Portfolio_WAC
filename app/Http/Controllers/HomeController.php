@@ -14,9 +14,9 @@ class HomeController extends Controller
     function welcome()
     {
         $categories = Category::with(['technologies.projects'])->get();
-        $technologies = Technology::all();
-        $feedbacks = Feedback::all();
-        $projects = Project::all();
+        $technologies = Technology::orderBy('updated_at')->get();
+        $feedbacks = Feedback::orderBy('updated_at')->get();
+        $projects = Project::orderBy('updated_at')->get();
         return Inertia::render('Welcome', [
             'categories' => $categories->load('technologies'),
             'technologies' => $technologies->load('projects'),

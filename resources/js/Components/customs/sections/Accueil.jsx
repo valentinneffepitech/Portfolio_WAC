@@ -5,7 +5,7 @@ import { Character } from '../Character'
 export const Accueil = () => {
     return (
         <section className='py-12 text-white min-h-screen flex flex-col lg:flex-row lg:items-center justify-center' id="accueil">
-            <div className='flex h-[15vh] lg:h-[40vh]'>
+            <div className='flex h-[15vh] lg:h-[40vh] lg:mr-[10%]'>
                 <h1 className='text-2xl text-right w-1/2 pr-2 py-4 border border-transparent flex justify-end border-r-white lg:text-[4vw] lg:text-right lg:leading-[4vw]'>
                     <span>
                         Valentin NEFF

@@ -5,7 +5,6 @@
 /public/storage
 /storage/*.key
 /vendor
-/dbdata
 .env
 .env.backup
 .env.production
@@ -20,5 +19,7 @@ yarn-error.log
 /.vscode
 .env.local1
 /apache
+/dbdata
 docker-compose.yml
 Dockerfile
+.vite
