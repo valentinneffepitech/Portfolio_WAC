@@ -19,7 +19,7 @@ yarn-error.log
 /.vscode
 .env.local1
 /apache
-/dbdata
 docker-compose.yml
 Dockerfile
 .vite
+dbdata
