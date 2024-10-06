@@ -15,7 +15,7 @@ export const Techno = ({
     }, [isActive])
 
     const manageFilter = (id) => {
-        setIsActive(prev=>prev.includes(id) ? prev.filter(cat=>cat.id != id) : [...prev, id])
+        setIsActive(prev=>prev.includes(id) ? prev.filter(cat=>cat != id) : [...prev, id])
     }
 
     const resetFilter = () => {
