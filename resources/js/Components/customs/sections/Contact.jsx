@@ -77,7 +77,7 @@ export const Contact = () => {
                     <TextareaAutosize ref={message} onChange={(ev) => handleChange(ev)} required className='placeholder-blue-300 bg-black text-#f6f6f6 mt-4' placeholder='Votre message' defaultValue={contact.message} name='message' minRows={2} />
                     {
                         !isLoading ?
-                            <button className={`mt-4 py-2 border font-bold text-blue-400 border-blue-400 transition-all duration-300 rounded hover:bg-blue-400 hover:text-white ${isLoading && 'disabled'} w-full md:w-fit md:py-2 md:px-[1.5rem] mx-auto`} >
+                            <button className={`mt-4 py-2 border font-bold text-blue-400 border-blue-400 transition-all duration-300 rounded hover:bg-blue-400 hover:text-white ${isLoading && 'disabled'} w-full md:w-fit md:py-2 md:px-[1.5rem] mx-auto hover:shadow-[0_0_20px_rgb(96_165_250)]`} >
                                 Envoyer
                             </button>
                             :
@@ -88,13 +88,13 @@ export const Contact = () => {
             </div>
             <div className='text-white my-[1.5rem] lg:mt-[3rem] lg:mb-0 flex flex-wrap gap-[1rem] w-full justify-around lg:justify-center p-6 lg:items-center lg:gap-0'>
                 <div className='flex items-center w-2/5 lg:w-1/4 justify-center'>
-                    <a href="tel:+33624950494" className='flex w-full lg:w-fit lg:px-10 justify-center py-4 transition-all duration-300 border-white hover:border-blue-900 border rounded hover:bg-blue-900 items-center gap-6'>
+                    <a href="tel:+33624950494" className='flex w-full lg:w-fit lg:px-10 justify-center py-4 transition-all duration-300 border-white hover:border-blue-900 border rounded hover:bg-blue-900 items-center gap-6 hover:shadow-[0_0_20px_rgb(30_58_138)]'>
                         <Smartphone size={30} />
                         <p className='hidden md:block'>06 24 95 04 94</p>
                     </a>
                 </div>
                 <div className='flex items-center w-2/5 lg:w-1/4 justify-center'>
-                    <a href='mailto:neffvalentinpro@gmail.com' className='flex w-full lg:w-fit lg:px-10 justify-center py-4 transition-all duration-300 border-white hover:border-blue-900 border rounded hover:bg-blue-900 items-center gap-6'>
+                    <a href='mailto:neffvalentinpro@gmail.com' className='flex w-full lg:w-fit lg:px-10 justify-center py-4 transition-all duration-300 border-white hover:border-blue-900 border rounded hover:bg-blue-900 items-center gap-6 hover:shadow-[0_0_20px_rgb(30_58_138)]'>
                         <Mail size={30} />
                         <p className='hidden md:block'>neffvalentinpro@gmail.com</p>
                     </a>

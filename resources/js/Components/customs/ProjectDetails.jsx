@@ -11,16 +11,6 @@ export const ProjectDetails = ({
             <h4 className='w-full pt-2 px-6 font-semibold text-lg '>
                 {project.name}
             </h4>
-            <div dangerouslySetInnerHTML={{ __html: project.description }} className='w-full p-6 pt-2' ></div>
-            <ul className='flex items-center justify-start mt-[1rem] w-full px-6 self-end gap-6'>
-                {
-                    project.technologies.map(techno => (
-                        <li key={techno.id} className='w-1/5 lg:w-[15%]'>
-                            <img src={techno.image} className='w-full' />
-                        </li>
-                    ))
-                }
-            </ul>
         </div>
     )
 }

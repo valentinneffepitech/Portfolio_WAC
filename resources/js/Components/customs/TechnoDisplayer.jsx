@@ -3,7 +3,8 @@ import { ProjectDetails } from './ProjectDetails'
 import { ProjectCarroussel } from './ProjectCarroussel';
 
 export const TechnoDisplayer = ({
-    projects
+    projects,
+    categories
 }) => {
 
     const [fullDisplay, setFullDisplay] = useState(false);
@@ -12,15 +13,33 @@ export const TechnoDisplayer = ({
 
     const chooseIndex = (index) => setFullDisplay(index);
 
+    const verifIfDisplay = (project) => {
+        if(categories.length == 0) {
+            return true;
+        }
+        if(project.technologies.length != 0){
+            const result = project.technologies.filter(techno => categories.includes(techno.id));
+            if(result.length != 0){
+                return true;
+            }
+        }
+        return false;
+    }
+
     return (
         <div id="technos" className={`flex lg:mx-auto lg:w-[90%]`}>
             <div id="technos__list" className={`w-full overflow-x-hidden flex flex-wrap justify-around lg:justify-evenly lg:gap-[1rem] flex-shrink-0 transition-all duration-300 border-collapse p-5`}>
                 {
-                    projects.map((project, index) => (
-                        <ProjectDetails key={project.id} project={project} index={index + 1} choose={chooseIndex} />
-                    ))
+                    projects.map((project, index) => 
+                        {
+                            if(verifIfDisplay(project)){
+                                return (
+                                    <ProjectDetails key={project.id} project={project} index={index + 1} choose={chooseIndex} />
+                                )
+                            }
+                        })
                 }
-            </div>
+            </div>  
             <ProjectCarroussel projects={projects} show={fullDisplay} hide={closeCarroussel} />
         </div>
     )
