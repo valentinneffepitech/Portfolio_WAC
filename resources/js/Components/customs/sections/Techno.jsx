@@ -10,10 +10,6 @@ export const Techno = ({
 
     const [isActive, setIsActive] = useState([]);
 
-    useEffect(()=>{
-        console.log(isActive)
-    }, [isActive])
-
     const manageFilter = (id) => {
         setIsActive(prev=>prev.includes(id) ? prev.filter(cat=>cat != id) : [...prev, id])
     }

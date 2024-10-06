@@ -18,7 +18,8 @@ export const TechnoDisplayer = ({
             return true;
         }
         if(project.technologies.length != 0){
-            const result = project.technologies.filter(techno => categories.includes(techno.id));
+            console.log(project.technologies)
+            const result = project.technologies.filter(techno => categories.includes(techno.category_id));
             if(result.length != 0){
                 return true;
             }
