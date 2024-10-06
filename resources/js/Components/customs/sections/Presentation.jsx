@@ -44,7 +44,7 @@ export const Presentation = () => {
                                 </ul>
                             </li>
                         </ul>
-                        <a href="./CV_Valentin_Neff.pdf" target="_blank" className='border-2 p-4 m-3 rounded mx-auto w-3/5 text-center lg:ml-[70%] lg:w-[25%] hover:bg-white hover:text-black transition-all duration-300 hover:shadow-[0_0_20px_#fff] flex flex-row items-center'>
+                        <a href="./CV_Valentin_Neff.pdf" target="_blank" className='border-2 p-4 m-3 rounded mx-auto w-fit text-center lg:ml-[70%] lg:w-[25%] hover:bg-white hover:text-black transition-all duration-300 hover:shadow-[0_0_20px_#fff] flex flex-row items-center'>
                             Voir mon CV
                             <FileDown className='ml-3'/>
                         </a>
