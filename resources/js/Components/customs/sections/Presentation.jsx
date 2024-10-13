@@ -28,18 +28,18 @@ export const Presentation = () => {
                         <p className='px-3 py-1'>
                             Informations pratiques :
                         </p>
-                        <ul className='list-inside my-6 flex flex-col gap-[.5rem]'>
+                        <ul className='list-inside my-6 flex flex-col gap-[.5rem] md:text-lg'>
                             <li className='before:content-["\1F527"] before:pr-2'>
-                                Compétences :
-                                <ul className='w-full ml-[15%] flex flex-col gap-2 my-2'>
+                                Mes compétences :
+                                <ul className='w-full ml-[15%] md:ml-[5%] flex flex-col gap-2 my-2'>
                                     <li className='before:content-["\1F914"] before:pr-2'>
-                                        Conception
+                                        Concevoir
                                     </li>
                                     <li className='before:content-["\2328"] before:pr-2'>
-                                        Développement
+                                        Déveloper
                                     </li>
                                     <li className='before:content-["\1F5A5"] before:pr-2'>
-                                        Déploiement
+                                        Déployer
                                     </li>
                                 </ul>
                             </li>

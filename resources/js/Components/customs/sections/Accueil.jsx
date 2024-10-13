@@ -1,8 +1,10 @@
 import React from 'react'
 import { ScrollDown } from '../ScrollDown'
 import { Character } from '../Character'
+import { CarrousselAccueil } from '@/Components/CarrousselAccueil'
 
 export const Accueil = () => {
+
     return (
         <section className='py-12 text-white min-h-screen flex flex-col lg:flex-row lg:items-center justify-center' id="accueil">
             <div className='flex h-[15vh] lg:h-[40vh] lg:mr-[10%]'>
@@ -18,9 +20,9 @@ export const Accueil = () => {
                 </h2>
             </div>
             <div className='mt-[2rem] flex flex-col items-center gap-10'>
-                <Character className={'w-1/2 mx-auto mt-6 md:w-1/3 lg:w-[20vw]'} />
+                <CarrousselAccueil/>
                 <p className='italic fadeIn-5 text-center'>
-                    "Rendons simple ce qui semble compliqué"
+                    "Rendre simple ce qui semble compliqué"
                 </p>
             </div>
             <ScrollDown />

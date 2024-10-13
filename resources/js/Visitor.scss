@@ -104,13 +104,39 @@ h3{
             rgba(0, 0, 0, 0.2));
 }
 
+.slideIn-left{
+    animation-name: slideInLeft;
+    animation-timing-function: linear;
+    animation-duration: 700ms;
+}
+
+.slideOut-left{
+    animation-name: slideOutLeft;
+    animation-timing-function: linear;
+    animation-duration: 700ms;
+}
+
 @keyframes slideInLeft {
     0% {
-        transform: translateX(-100%);
+        transform: translateX(10%);
+        opacity: 0;
     }
 
     100% {
         transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOutLeft {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-10%);
+        opacity: 0;
     }
 }
 
@@ -142,65 +168,6 @@ h3{
     100% {
         transform: translateX(0);
     }
-}
-
-#body {
-    animation-name: slideInRight;
-    animation-duration: 1s;
-    fill: #00ffbf;
-    stroke: #1d1d1d;
-    stroke-width: .2;
-}
-
-#head {
-    animation-name: slideInLeft;
-    animation-duration: 1.25s;
-    fill: peachpuff;
-    stroke: #1d1d1d;
-    stroke-width: .5;
-}
-
-#hair {
-    animation-name: slideInTop;
-    animation-duration: 1.5s;
-    fill: sienna;
-    stroke: #1d1d1d;
-    stroke-width: .5;
-}
-
-#armLeft,
-#armRight {
-    animation-duration: 1.5s;
-    fill: #27e998;
-    stroke-width: .5;
-    stroke: #1d1d1d;
-}
-
-#armLeft {
-    animation-name: slideInLeft;
-}
-
-#armRight {
-    animation-name: slideInRight;
-}
-
-#face rect {
-    animation-name: slideInDiagonal;
-    fill: #1d1d1d;
-    stroke: #1d1d1d;
-    stroke-width: .5;
-}
-
-#face rect:first-of-type {
-    animation-duration: 1.75s;
-}
-
-#face rect:nth-of-type(2) {
-    animation-duration: 2s;
-}
-
-#face rect:nth-of-type(3) {
-    animation-duration: 2.2s;
 }
 
 @for $i from 1 through 5 {
