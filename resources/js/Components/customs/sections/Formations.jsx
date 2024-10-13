@@ -35,9 +35,9 @@ export const Formations = () => {
                 </div>
                 <img src={Corgi} className='w-3/4 mx-auto md:w-3/4 my-[3rem] lg:my-0 lg:w-1/2 lg:p-16' title="Oui c'est moi qui l'ai fait" alt='Coding doggy' />
             </div>
-            <div className='md:items-center mt-[1rem] flex flex-col-reverse md:flex-row'>
-                <img src={LogoGrad} className='w-1/2 md:w-4/5 mx-auto my-10 md:p-10' />
-                <div className='w-4/5 mx-auto rounded border border-transparent pt-4 md:border-l-2 md:border-l-white glass3 py-4 lg:rounded lg:w-[78%]'>
+            <div className='md:items-center mt-[1rem] flex flex-col-reverse md:flex-row lg:grid lg:grid-cols-2'>
+                <img src={LogoGrad} className='w-4/5 lg:w-full mx-auto my-10 md:p-10' />
+                <div className='w-4/5 lg:w-full mx-auto rounded border border-transparent pt-4 md:border-l-2 md:border-l-white glass3 py-4 lg:rounded'>
                     <p className='w-3/4 md:w-full md:p-[1rem] mx-auto md:mx-0 text-white mb-4'>
                         C'est dans le cadre de ma formation que j'ai réalisé un apprentissage durant 14 mois au sein de la société GRAD.
                     </p>

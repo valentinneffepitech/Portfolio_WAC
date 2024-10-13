@@ -64,7 +64,7 @@ export const Contact = () => {
 
     return (
         <section id="contact" className='min-h-screen text-white bg-[#252525] flex flex-col justify-evenly md:justify-center items-center'>
-            <h2 className='text-[1.5rem] mt-10'>
+            <h2 className='ml-6 mb-3 text-[1.5rem] mt-10'>
                 Intéressé par une collaboration&nbsp;?
             </h2>
             <h3 className='text-center mt-3 w-4/5 text-[1.1rem]'>

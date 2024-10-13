@@ -19,7 +19,7 @@ export const Accueil = () => {
             </div>
             <div className='mt-[2rem] flex flex-col items-center gap-10'>
                 <Character className={'w-1/2 mx-auto mt-6 md:w-1/3 lg:w-[20vw]'} />
-                <p className='italic fadeIn-5'>
+                <p className='italic fadeIn-5 text-center'>
                     "Rendons simple ce qui semble compliqué"
                 </p>
             </div>
