@@ -10,7 +10,7 @@ export const FilterInput = ({categorie, defaultChecked, manageFilter}) => {
             () => manageFilter(categorie.id) 
         }/>
         <label htmlFor={`category_${categorie.id}`} className={`py-6 px-4 w-full flex cursor-pointer transition-all duration-300 border-b-2 ${defaultChecked.includes(categorie.id) ? "border-white": "border-transparent"}`}>
-            Projet {categorie.name}
+            {categorie.name}
         </label>
     </div>
   )
