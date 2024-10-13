@@ -9,7 +9,7 @@ export const FilterInput = ({categorie, defaultChecked, manageFilter}) => {
         <input type="checkbox" name="filter[]" value={categorie.id} className='h-0 w-0 m-0 p-0 opacity-0' id={`category_${categorie.id}`} onChange={
             () => manageFilter(categorie.id) 
         }/>
-        <label htmlFor={`category_${categorie.id}`} className={`py-6 px-4 w-full flex cursor-pointer transition-all duration-300 ${defaultChecked.includes(categorie.id) ? "bg-white text-[#1d1d1d]": "border-transparent"}`}>
+        <label htmlFor={`category_${categorie.id}`} className={`py-6 px-4 w-full flex cursor-pointer transition-all border-2 border-transparent hover:border-white duration-300 ${defaultChecked.includes(categorie.id) ? "bg-white text-[#1d1d1d]": "border-transparent"}`}>
             {categorie.name}
         </label>
     </div>
