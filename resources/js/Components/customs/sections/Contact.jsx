@@ -70,7 +70,7 @@ export const Contact = () => {
             <h3 className='text-center mt-3 w-4/5 text-[1.1rem]'>
                 Si c'est le cas, n'hésitez-pas à me laisser un message et je reviendrai vers vous dès que possible.
             </h3>
-            <div className='w-[90%] lg:flex lg:mt-[2rem]'>
+            <div className='w-[90%] lg:flex lg:mt-[2rem] items-center'>
                 <form method='POST' action='/api/contact' onSubmit={(ev) => handleSubmit(ev)} className='w-full rounded mt-4 flex flex-col lg:p-[2rem] lg:border lg:border-transparent lg:border-r-white lg:border-r-2'>
                     <input ref={name} onChange={(ev) => handleChange(ev)} required type='text' name='name' defaultValue={contact.name} placeholder='Nom / Prénom' className='placeholder-blue-300 bg-black text-#f6f6f6 ' />
                     <input ref={email} onChange={(ev) => handleChange(ev)} required type='email' name='email' defaultValue={contact.email} placeholder='Email' className='placeholder-blue-300 bg-black text-#f6f6f6 mt-4' />
