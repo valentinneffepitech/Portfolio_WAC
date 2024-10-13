@@ -16,7 +16,7 @@ export const TechnoFilter = ({
                     <input type="checkbox" name="filter[]" value={''} className='h-0 w-0 m-0 p-0 opacity-0' id={`category_0`} onChange={
                         () => reset()
                     }/>
-                    <label htmlFor={`category_0`} className={`pb-6 px-2 w-full flex cursor-pointer transition-all duration-300 border-b-2 ${defaultChecked.length === 0 ? "border-white": "border-transparent"}`}>
+                    <label htmlFor={`category_0`} className={`py-6 px-2 w-full flex cursor-pointer transition-all duration-300 ${defaultChecked.length === 0 ? "bg-white text-[#1d1d1d]": "border-transparent"}`}>
                         Tous les projets
                     </label>
                 </div>
