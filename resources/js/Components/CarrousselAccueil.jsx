@@ -17,24 +17,39 @@ import Spring from '@/assets/icons/Spring.png'
 import { useState } from 'react'
 import { useEffect } from 'react'
 import { Icon } from './customs/Icon'
+import { useRef } from 'react'
 
 export const CarrousselAccueil = () => {
 
     const [index, setIndex] = useState(0)
+    const [ascend, setAscend] = useState(true)
 
-    useEffect(()=>{
-        setInterval(()=>{
-            next()
-        }, 5000)
-    }, [])
+    const intervalRef = useRef(null)
 
-    const next = ()=>setIndex(prev=>{
-        if(technos[prev+1]) {
-            return prev+1
+    const next = ()=> setIndex(prev=>{
+        if(ascend){
+            if(technos[prev+1]) {
+                return prev+1
+            } else {
+                setAscend(p=>!p)
+                return prev-1
+            }
         } else {
-            return 0
+            if(technos[prev-1]) {
+                return prev-1
+            } else {
+                setAscend(p=>!p)
+                return prev+1
+            }
         }
     })
+
+    useEffect(()=>{
+        clearInterval(intervalRef.current)
+        intervalRef.current = setInterval(()=>{
+            next()
+        }, 3000)
+    }, [ascend])
 
     const technos = [
         {
@@ -120,10 +135,17 @@ export const CarrousselAccueil = () => {
     ]
 
   return (
-    <div className='overflow-hidden w-[4/5] flex flex-shrink-0 flex-grow-0' id="accueil_carroussel">
-    {
-        <Icon datas={technos[index]}/>
-    }
+    <div className='overflow-hidden w-1/3' id="accueil_carroussel">
+        <div id="accueil_carroussel__slider"className='flex flex-shrink-0' style={{
+            "--index": index
+        }}>
+            {technos.map(tech => 
+                    {
+                        return <Icon datas={tech} key={tech.id}/>
+                    }
+                )
+            }
+        </div>
     </div>
   )
 }

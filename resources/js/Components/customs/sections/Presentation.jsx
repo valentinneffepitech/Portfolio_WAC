@@ -10,11 +10,11 @@ export const Presentation = () => {
             <h3 className='text-2xl w-3/4 mx-auto text-center mb-4 font-semibold py-4 glass3 rounded-full'>
                 Faisons connaissance
             </h3>
-            <div id="accueil__ambiance" className='technoBg py-6 lg:w-4/5 lg:flex md:mx-auto md:w-fit flex-col h-100 justify-center items-center'>
-                <div className='md:w-[80%] md:flex flex-row-reverse justify-between items-center mx-auto lg:w-full'>
+            <div id="accueil__ambiance" className='py-6 lg:w-4/5 lg:flex md:mx-auto md:w-fit flex-col h-100 justify-center items-center'>
+                <div className='md:w-[80%] md:flex md:flex-wrap md:justify-center lg:flex-row-reverse justify-between items-center mx-auto lg:w-full'>
                     <div className='py-3 md:w-1/2 lg:w-1/5'>
-                        <img src={Cup} className='w-1/2 mx-auto md:w-1/3 lg:w-[20vw]' />
-                        <p className='italic text-center w-4/5 mx-auto my-3 py-2 glass3 rounded'>
+                        <img src={Cup} className='w-1/2 mx-auto md:w-2/3 lg:w-[20vw]' />
+                        <p className='italic text-center w-4/5 mx-auto my-3 py-2 glass3 rounded px-3'>
                             My code is like my coffee, <br />I prefer it without bugs inside
                         </p>
                     </div>
@@ -44,10 +44,8 @@ export const Presentation = () => {
                                 </ul>
                             </li>
                         </ul>
-                        <a href="./CV_Valentin_Neff.pdf" target="_blank" className='border-2 p-4 m-3 rounded mx-auto w-fit text-center lg:ml-[70%] lg:w-[25%] hover:bg-white hover:text-black transition-all duration-300 hover:shadow-[0_0_20px_#fff] flex flex-row items-center'>
-                            <span className='md:hidden lg:block'>
-                                Voir mon CV
-                            </span>
+                        <a href="./CV_Valentin_Neff.pdf" target="_blank" className='border-2 p-4 m-3 rounded mx-auto w-full justify-center text-center lg:ml-[70%] lg:w-[25%] hover:bg-white hover:text-black transition-all duration-300 hover:shadow-[0_0_20px_#fff] flex flex-row items-center'>
+                            Voir mon CV
                             <FileDown className='ml-3'/>
                         </a>
                     </div>

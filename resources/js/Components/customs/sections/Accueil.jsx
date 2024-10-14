@@ -7,7 +7,7 @@ export const Accueil = () => {
 
     return (
         <section className='py-12 text-white min-h-screen flex flex-col lg:flex-row lg:items-center justify-center' id="accueil">
-            <div className='flex h-[15vh] lg:h-[40vh] lg:mr-[10%]'>
+            <div className='flex h-[15vh] lg:h-[40vh]'>
                 <h1 className='text-2xl text-right w-1/2 pr-2 py-4 border border-transparent flex justify-end border-r-white lg:text-[4vw] lg:text-right lg:leading-[4vw]'>
                     <span>
                         Valentin NEFF
@@ -19,10 +19,10 @@ export const Accueil = () => {
                     </span>
                 </h2>
             </div>
-            <div className='mt-[2rem] flex flex-col items-center gap-10'>
+            <div className='mt-[2rem] flex flex-col items-center gap-10 md:w-1/2'>
                 <CarrousselAccueil/>
                 <p className='italic fadeIn-5 text-center'>
-                    "Rendre simple ce qui semble compliqué"
+                    Rendre simple ce qui semble compliqué
                 </p>
             </div>
             <ScrollDown />
