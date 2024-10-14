@@ -1,6 +1,5 @@
 import React from 'react'
 import { ScrollDown } from '../ScrollDown'
-import { Character } from '../Character'
 import { CarrousselAccueil } from '@/Components/CarrousselAccueil'
 
 export const Accueil = () => {

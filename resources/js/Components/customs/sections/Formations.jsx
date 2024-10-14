@@ -16,7 +16,7 @@ export const Formations = () => {
                         J'ai donc commencé par travailler les bases de l'HTML et du CSS afin de prouver ma motivation à aller au bout de ce cursus. C'est ainsi que j'ai entamé ma formation en novembre 2022, avec pour objectif de devenir développeur Web.
                     </p>
                 </div>
-                <img src={LogoWac} className='w-3/4 mx-auto md:w-3/4 m:p-4 my-10 lg:w-4/5 lg:p-8' />
+                <img src={LogoWac} className='w-3/4 mx-auto md:w-3/4 m:p-4 my-10 lg:w-4/5 lg:p-8' alt={"Logo Webacadémie By Epitech"}/>
             </div>
             <div className='md:items-center md:flex md:mt-6 lg:grid lg:grid-cols-2'>
                 <div className='w-4/5 mx-auto rounded border border-transparent pt-4 md:border-r-2 md:border-r-white lg:pr-16 glass3 py-4 lg:rounded lg:w-full'>
@@ -36,7 +36,7 @@ export const Formations = () => {
                 <img src={Corgi} className='w-3/4 mx-auto md:w-3/4 my-[3rem] lg:my-0 lg:w-full lg:p-16' title="Oui c'est moi qui l'ai fait" alt='Coding doggy' />
             </div>
             <div className='md:items-center mt-[1rem] flex flex-col-reverse md:flex-row lg:grid lg:grid-cols-2'>
-                <img src={LogoGrad} className='w-4/5 lg:w-full mx-auto my-10 md:p-10' />
+                <img src={LogoGrad} className='w-4/5 lg:w-full mx-auto my-10 md:p-10' title={"grad-system"} alt={"Logo grad-system"}/>
                 <div className='w-4/5 lg:w-full mx-auto rounded border border-transparent pt-4 md:border-l-2 md:border-l-white glass3 py-4 lg:rounded'>
                     <p className='w-3/4 md:w-full md:p-[1rem] mx-auto md:mx-0 text-white mb-4'>
                         C'est dans le cadre de ma formation que j'ai réalisé un apprentissage durant 14 mois au sein de la société GRAD.

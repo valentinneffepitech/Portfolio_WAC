@@ -36,13 +36,13 @@ export const ProjectCarroussel = ({
             <X size={30} color='white' className='fixed top-6 right-6 cursor-pointer' onClick={() => hide()} />
             <ChevronLeft size={40} color='white' className='cursor-pointer' onClick={() => setScreen(prev => previousScreen(prev))} />
                 <div className='w-[80%] mx-auto flex flex-col items-center overflow-y-scroll lg:gap-4'>
-                    <img src={projects[screen].image} className='w-[90%] lg:w-[60%] cursor-pointer mb-2 lg:mb-0 aspect-[4/3] lg:aspect-auto border-b-gray-300 border-b-[1px] lg:border-b-0 max-h-[90vh]' title={projects[screen].name} />
+                    <img src={projects[screen].image} className='w-[90%] lg:w-[60%] cursor-pointer mb-2 lg:mb-0 aspect-[4/3] lg:aspect-auto border-b-gray-300 border-b-[1px] lg:border-b-0 max-h-[90vh]' alt={projects[screen].name}  title={projects[screen].name}/>
                     <div className='text-white glass3 w-[90%] lg:w-[60%] mx-auto rounded p-6' dangerouslySetInnerHTML={{__html: projects[screen].description}}></div>
                         <ul className='flex items-center justify-center mt-[1rem] w-full px-6 self-end gap-6'>
                         {
                             projects[screen].technologies.map(techno => (
                                 <li key={techno.id} className='w-1/5 lg:w-[8%]'>
-                                    <img src={techno.image} className='w-full aspect-square' title={techno.name}/>
+                                    <img src={techno.image} className='w-full aspect-square' title={techno.name} alt={techno.name}/>
                                 </li>
                             ))
                         }

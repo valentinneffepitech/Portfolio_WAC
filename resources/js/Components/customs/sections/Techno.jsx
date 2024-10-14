@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { TechnoFilter } from '../TechnoFilter'
 import { TechnoDisplayer } from '../TechnoDisplayer'
 import { Github } from '../svg/Github'

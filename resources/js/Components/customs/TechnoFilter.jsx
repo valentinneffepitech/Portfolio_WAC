@@ -17,7 +17,7 @@ export const TechnoFilter = ({
                         () => reset()
                     }/>
                     <label htmlFor={`category_0`} className={`py-6 px-2 w-full flex cursor-pointer transition-all duration-300 ${defaultChecked.length === 0 ? "bg-white text-[#1d1d1d]": "border-transparent"}`}>
-                        Tous les projets
+                        Voir tous
                     </label>
                 </div>
                 {

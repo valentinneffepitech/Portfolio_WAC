@@ -13,7 +13,7 @@ export const Presentation = () => {
             <div id="accueil__ambiance" className='py-6 lg:w-4/5 lg:flex md:mx-auto md:w-fit flex-col h-100 justify-center items-center'>
                 <div className='md:w-[80%] md:flex md:flex-wrap md:justify-center lg:flex-row-reverse justify-between items-center mx-auto lg:w-full'>
                     <div className='py-3 md:w-1/2 lg:w-1/5'>
-                        <img src={Cup} className='w-1/2 mx-auto md:w-2/3 lg:w-[20vw]' />
+                        <img src={Cup} className='w-1/2 mx-auto md:w-2/3 lg:w-[20vw]' alt='Tasse de café animée fumante'/>
                         <p className='italic text-center w-4/5 mx-auto my-3 py-2 glass3 rounded px-3'>
                             My code is like my coffee, <br />I prefer it without bugs inside
                         </p>

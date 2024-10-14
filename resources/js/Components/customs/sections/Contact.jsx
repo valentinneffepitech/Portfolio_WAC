@@ -2,8 +2,6 @@ import { TextareaAutosize } from '@mui/material';
 import React, { useRef, useState } from 'react'
 import { Loader } from '../Loader';
 import { Toast } from '../Toasts';
-import { Github } from '../svg/Github';
-import { Linkedin } from '../svg/Linkedin';
 import { HandShake } from '../svg/HandShake';
 import { Mail, Smartphone } from 'lucide-react';
 
