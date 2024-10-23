@@ -1,15 +1,5 @@
 <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="background-color: #1d1d1d">
     <style>
-        @keyframes draw {
-            from {
-                stroke-dasharray: 0, 1000;
-            }
-
-            to {
-                stroke-dasharray: 1000, 0;
-            }
-        }
-
         polyline {
             stroke: white;
             fill: none;
