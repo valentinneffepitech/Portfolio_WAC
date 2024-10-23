@@ -15,8 +15,6 @@ export default function Welcome({ feedbacks, projects, categories }) {
 
     const [openMenu, setOpenMenu] = useState(false);
 
-    const [filter, setFilter] = useState([]);
-
     const closeMenu = () => setOpenMenu(false);
 
     const iconSize = 30

@@ -41,8 +41,10 @@ export const ProjectCarroussel = ({
                         <ul className='flex items-center justify-center mt-[1rem] w-full px-6 self-end gap-6'>
                         {
                             projects[screen].technologies.map(techno => (
-                                <li key={techno.id} className='w-1/5 lg:w-[8%]'>
-                                    <img src={techno.image} className='w-full aspect-square' title={techno.name} alt={techno.name}/>
+                                <li key={techno.id} className='w-1/5 lg:w-[8%] overflow-visible'>
+                                    <div className='w-full aspect-square flex overflow-visible'>
+                                        <img src={techno.image} className='transition-all duration-150 hover:scale-125' title={techno.name} alt={techno.name}/>
+                                    </div>
                                 </li>
                             ))
                         }

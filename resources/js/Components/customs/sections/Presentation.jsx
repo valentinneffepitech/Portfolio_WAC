@@ -1,7 +1,6 @@
 import React from 'react'
 import Cup from '@/assets/ambiance.svg'
 import pp from '@/assets/photo.jpg'
-import { Link } from '@inertiajs/react'
 import { FileDown } from 'lucide-react'
 
 export const Presentation = () => {
@@ -45,7 +44,7 @@ export const Presentation = () => {
                             </li>
                         </ul>
                         <a href="./CV_Valentin_Neff.pdf" target="_blank" className='border-2 p-4 m-3 rounded mx-auto w-full justify-center text-center lg:ml-[70%] lg:w-[25%] hover:bg-white hover:text-black transition-all duration-300 hover:shadow-[0_0_20px_#fff] flex flex-row items-center'>
-                            Voir mon CV
+                            En savoir plus
                             <FileDown className='ml-3'/>
                         </a>
                     </div>
