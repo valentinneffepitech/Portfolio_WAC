@@ -26,7 +26,7 @@ export const Accueil = () => {
                 <TextAppear list={[
                     "Developper",
                     "Concevoir",
-                    "Déployer",
+                    "Deployer",
                     "Tester",
                     "Optimiser"
                 ]}/>
