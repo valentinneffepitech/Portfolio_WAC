@@ -16,7 +16,7 @@ export const Formations = () => {
                         J'ai donc commencé par travailler les bases de l'HTML et du CSS afin de prouver ma motivation à aller au bout de ce cursus. C'est ainsi que j'ai entamé ma formation en novembre 2022, avec pour objectif de devenir développeur Web.
                     </p>
                 </div>
-                <img src={LogoWac} className='w-3/4 mx-auto md:w-3/4 m:p-4 my-10 lg:w-4/5 lg:p-8' alt={"Logo Webacadémie By Epitech"}/>
+                <img src={LogoWac} className='w-3/4 mx-auto my-10 lg:w-4/5 lg:p-8' alt={"Logo Webacadémie By Epitech"}/>
             </div>
             <div className='md:items-center md:flex md:mt-6 lg:grid lg:grid-cols-2'>
                 <div className='w-4/5 mx-auto rounded border border-transparent pt-4 md:border-r-2 md:border-r-white lg:pr-16 glass3 py-4 lg:rounded lg:w-full'>
@@ -30,7 +30,7 @@ export const Formations = () => {
                         De plus, cette formation nous a permis de découvrir d'autres langages, frameworks, librairies et façons de coder.
                     </p>
                     <p className='w-3/4 md:w-full mx-auto md:p-[1rem] md:mx-0 text-white'>
-                        Tous les projets que j'ai pu mener à bien me permettent aujourd'hui d'aborder des problématiques diverses ainsi que d'acquérir des notions dans d'autres domaines tels que le développement d'applications mobiles ou encore d'algorithmie.
+                        Tous les projets que j'ai pu mener à bien me permettent aujourd'hui d'aborder des problématiques diverses ainsi que d'acquérir des notions dans d'autres domaines tels que le développement d'applications mobiles ou encore la réalisation d'algorithmes.
                     </p>
                 </div>
                 <img src={Corgi} className='w-3/4 mx-auto md:w-3/4 my-[3rem] lg:my-0 lg:w-full lg:p-16' title="Oui c'est moi qui l'ai fait" alt='Coding doggy' />

@@ -1,6 +1,7 @@
 import React from 'react'
 import { ScrollDown } from '../ScrollDown'
 import PC from '@/assets/progra.png'
+import { TextAppear } from '../TextAppear'
 
 export const Accueil = () => {
 
@@ -18,13 +19,17 @@ export const Accueil = () => {
                     </span>
                 </h2>
             </div>
-            <div className='mt-[2rem] flex flex-col items-center gap-10 md:w-1/2'>
+            <div className='mt-[2rem] flex flex-col items-center md:w-1/2'>
                 <div className='bounce w-full'>
                     <img src={PC} className='w-full lg:w-4/5 mx-auto' alt="PC qui rebondit"/>
                 </div>
-                <p className='italic fadeIn-5 text-center'>
-                    Rendre simple ce qui semble compliqué
-                </p>
+                <TextAppear list={[
+                    "Developper",
+                    "Concevoir",
+                    "Déployer",
+                    "Tester",
+                    "Optimiser"
+                ]}/>
             </div>
             <ScrollDown />
         </section>
