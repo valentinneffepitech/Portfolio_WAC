@@ -28,7 +28,7 @@ export const TechnoDisplayer = ({
 
     return (
         <div id="technos" className={`flex lg:mx-auto lg:w-[90%]`}>
-            <div id="technos__list" className={`w-full overflow-x-hidden flex flex-wrap justify-around lg:justify-evenly lg:gap-[1rem] lg:w-[90%] flex-shrink-0 transition-all duration-300 border-collapse p-5`}>
+            <div id="technos__list" className={`w-full overflow-x-hidden flex flex-wrap justify-around lg:justify-evenly lg:gap-[1rem] lg:w-[90%] lg:mx-auto flex-shrink-0 transition-all duration-300 border-collapse p-5`}>
                 {
                     projects.map((project, index) => 
                         {
