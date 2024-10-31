@@ -6,7 +6,7 @@ import LogoGrad from '@/assets/grad.svg'
 export const Formations = () => {
     return (
         <section className='min-h-screen bg-[#000] py-6 lg:py-16 lg:px-[10%] mx-auto' id="formation">
-            <h3 className='text-white text-3xl mb-4 w-3/4 mx-auto md:mx-0 md:text-center md:w-full py-6 lg:text-left lg:text-5xl'>Mon parcours</h3>
+            <h3 className='text-white text-3xl mb-4 w-3/4 mx-auto md:mx-0 md:text-center md:w-full py-6 lg:mb-12 lg:text-left lg:text-5xl'>Mon parcours</h3>
             <div className='md:items-center md:flex lg:grid lg:grid-cols-2'>
                 <div className='w-4/5 mx-auto rounded md:border-t-0 md:border-r-2 md:border-r-white lg:pr-16 glass3 py-4 lg:rounded lg:w-full'>
                     <p className='w-3/4 md:w-full mx-auto md:mx-0 md:p-[1rem] text-white pt-4'>
@@ -36,7 +36,9 @@ export const Formations = () => {
                 <img src={Corgi} className='w-3/4 mx-auto md:w-3/4 my-[3rem] lg:my-0 lg:w-full lg:p-16' title="Oui c'est moi qui l'ai fait" alt='Coding doggy' />
             </div>
             <div className='md:items-center mt-[1rem] flex flex-col-reverse md:flex-row lg:grid lg:grid-cols-2'>
-                <img src={LogoGrad} className='w-4/5 lg:w-full mx-auto my-10 md:p-10' title={"grad-system"} alt={"Logo grad-system"}/>
+                <div>
+                    <img src={LogoGrad} className='w-3/5 lg:w-4/5 mx-auto my-10 md:p-10' title={"grad-system"} alt={"Logo grad-system"}/>
+                </div>
                 <div className='w-4/5 lg:w-full mx-auto rounded border border-transparent pt-4 md:border-l-2 md:border-l-white glass3 py-4 lg:rounded'>
                     <p className='w-3/4 md:w-full md:p-[1rem] mx-auto md:mx-0 text-white mb-4'>
                         C'est dans le cadre de ma formation que j'ai réalisé un apprentissage durant 14 mois au sein de la société GRAD.
