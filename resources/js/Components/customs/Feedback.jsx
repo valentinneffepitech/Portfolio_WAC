@@ -1,10 +1,11 @@
 import React from 'react'
 
 export const Feedback = ({
-    feedback
+    feedback,
+    size
 }) => {
     return (
-        <div className='w-[90%] mx-auto py-4 border-t-2 border-b-2 border-collapse md:mt-4 md:w-2/5 md:flex md:flex-col md:justify-between lg:w-[30%] lg:mx-3 lg:max-h-[40vh]'>
+        <div className={`w-[90%] mx-auto py-4 ${size > 3 && "border-t-2 border-b-2 md:flex md:flex-col"} md:mt-4 md:w-2/5 md:justify-between lg:w-[30%] lg:mx-3`}>
             <p className='md:my-[1rem]'>
                 {
                     feedback.content

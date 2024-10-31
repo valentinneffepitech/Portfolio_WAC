@@ -45,7 +45,7 @@ export const ProjectCarroussel = ({
                                     projects[screen].technologies.map(techno => (
                                         <li key={techno.id} className='w-1/5 lg:w-[8%] overflow-visible'>
                                             <div className='w-full aspect-square flex overflow-visible'>
-                                                <img src={techno.image} className='transition-all duration-150 hover:scale-125' title={techno.name} alt={techno.name}/>
+                                                <img src={techno.image} className='' title={techno.name} alt={techno.name}/>
                                             </div>
                                         </li>
                                     ))

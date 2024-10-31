@@ -23,7 +23,7 @@ export const Techno = ({
             <h3 className='text-white text-3xl mb-4 w-3/4 mx-auto md:mx-0 md:text-center md:w-full py-6 lg:text-left lg:text-5xl lg:w-4/5 lg:mx-auto'>Quelques réalisations</h3>
             <TechnoFilter categories={categories} defaultChecked={isActive} manageFilter={manageFilter} reset={resetFilter}/>
             <TechnoDisplayer projects={projects} categories={isActive}/>
-            <a href='https://github.com/valentinneffepitech/Portfolio' className='flex text-white items-center mx-auto border-2 rounded w-4/5 md:w-fit border-[#f6f6f6] transition-all duration-200 hover:text-[#1d1d1d] hover:bg-[#f6f6f6] text-center py-4 px-6 mb-[2rem] hover:shadow-[0_0_20px_#fff]' target='_blank'>
+            <a href='https://github.com/valentinneffepitech/Portfolio' className='flex text-white justify-center items-center mx-auto border-2 rounded w-4/5 md:w-fit border-[#f6f6f6] transition-all duration-200 hover:text-[#1d1d1d] hover:bg-[#f6f6f6] text-center py-4 px-6 mb-[2rem] hover:shadow-[0_0_20px_#fff]' target='_blank'>
                 Plus de projets sur Github <Github stroke={'#1d1d1d'} className='w-8 h-fit ml-3' id="github_link" />
             </a>
         </section>
