@@ -8,7 +8,7 @@ export const ProjectDetails = ({
     return (
         <div className='mb-5 mx-2 w-full md:w-1/3 lg:w-[30%] project_detail transition-all duration-200 rounded pb-4 fadeIn-1 border-b-2' onClick={() => choose(index)}>
             <div className='w-full mx-auto overflow-hidden flex flex-col'>
-                <img src={project.image} className='h-full cursor-pointer w-full lg:h-[30vh]' alt={project.name}/>
+                <img src={project.image} className='h-full cursor-pointer w-full lg:h-[30vh] border border-transparent hover:border-white transition-all duration-300' alt={project.name}/>
                 <div className='w-full flex gap-2 mt-4'>
                     {
                         project.technologies.length != 0 && project.technologies.map(p=>{
