@@ -26,7 +26,7 @@ export const Presentation = () => {
                                 <p className='px-3 py-1'>
                                     Développeur passionné, en perpétuelle recherche de nouveaux défis.
                                 </p>
-                                <a href="./CV_Valentin_Neff.pdf" target="_blank" className='border-2 p-4 m-3 rounded mx-auto w-full justify-center text-center md:w-fit font-mono lg:ml-[60%] lg:w-[40%] hover:bg-white hover:text-black transition-all duration-300 hover:shadow-[0_0_20px_#fff] flex flex-row items-center'>
+                                <a href="./CV_Valentin_Neff.pdf" target="_blank" className='border-2 p-4 m-3 rounded mx-auto w-full justify-center text-center md:w-fit font-mono lg:ml-[60%] lg:w-[40%] hover:bg-white hover:text-black transition-all duration-300 hover:shadow-[0_0_20px_#fff] flex flex-row items-center lg:mt-10'>
                                     En savoir plus
                                     <FileDown className='ml-3'/>
                                 </a>
